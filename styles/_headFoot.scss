@@ -1,0 +1,217 @@
+@import "normalize";
+// @import "contact";
+// @import "calendar";
+
+$handwriting: "Dawning of a New Day",cursive;
+ 
+
+// HEADER
+
+header {
+	background-color:hsl(255, 31%, 20%);
+	position:sticky;
+	top:0;
+	z-index: 10;
+}
+
+	.hamburger {
+		label {
+			font-size: 2rem;
+			position: absolute;
+			top: 30px;
+			right:50px;
+		}
+			#toggle {
+			display:none;
+			width:100px;
+			}
+			
+				#toggle:checked + .dropDown{
+					display:block;
+				}
+
+	}	
+
+	
+.headContainer .dropDown {
+	display:flex;
+	flex-direction:column;
+	display:none;
+	position:absolute;
+	z-index: 3;
+	top:45px;
+	right:0px;
+	display:none;
+
+	li{
+		left:-50px;
+		background-color:hsl(255, 31%, 20%);
+		padding:20px;
+		margin:0;
+		width:100%;
+
+	}
+
+	a{
+		display:block;
+		text-align:center;
+	
+	}
+}
+
+.headContainer {
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	position: relative;
+
+	
+
+	.logo {
+		margin:10px;
+		width:20%;
+	
+
+		h1 {
+			color:white;
+			font-family: 'Tinos', serif;
+			font-size: 3rem;
+			letter-spacing: .5rem;
+			margin:10px;
+			padding:0;
+
+		}
+
+}
+
+	.topNav{
+		display: flex;
+		justify-content:flex-end;
+		width:100%;
+		margin-right:100px;
+	}
+
+			ul {
+				font-size:1.7rem;
+				list-style-type:none;
+				display:flex;
+				padding-right:50px;
+		
+			}
+
+				li {
+					padding:10px;
+					display:block;
+				}		
+					
+					a{
+						text-decoration: none;
+						color:white;
+						text-transform: uppercase;
+						letter-spacing: .1em;
+						padding:10px;
+						border-bottom: 1px solid transparent;
+					}
+
+					a:hover{
+						border-bottom:2px solid #778899;
+					}
+
+					a:active {
+						background-color: white;
+						color:black;
+						padding:10px;
+					}
+}
+
+
+//FOOTER
+
+footer {
+
+		p {
+			color:#778899;
+			font-family:$handwriting;
+			font-size:2rem;
+			font-stretch: ultra-expanded;
+			padding:30px;
+			margin: 0 auto;
+			text-align: center;
+			letter-spacing:.05em;
+			word-spacing: .3em;
+
+		}
+}
+
+@media (max-width: 765px) {
+
+		
+	.topNav{
+		margin-right:10x;
+		}
+	
+				ul {
+					font-size:.5rem;
+					padding-right:10px;
+				}
+
+					li {
+						padding:5px;
+					}		
+						
+						a{
+							letter-spacing: .1em;
+							padding:10px;
+							border-bottom: 1px solid transparent;
+						}
+	
+						a:hover{
+							border-bottom:2px solid #778899;
+						}
+	
+						a:active {
+							padding:10px;
+						}
+	}
+	
+				
+
+@media (max-width: 550px){
+	.headContainer {
+
+		.logo h1 {
+			margin:5px;
+			font-size:2rem;
+		}
+	
+	}
+	
+	.hamburger {
+		label {
+			font-size:2rem;
+			position: absolute;
+			top: 20px;
+			right:20px;
+		}
+	}	
+		
+
+	.topNav{
+		margin-right:10x;
+		
+				ul {
+					font-size:1.3rem;
+					padding-right:10px;
+				}
+
+					li {
+						padding:5px;
+					}		
+						
+	
+						a:active {
+							padding:5px;
+						}
+
+		}
+}

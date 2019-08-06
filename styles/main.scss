@@ -1,0 +1,308 @@
+@import "normalize";
+@import "headFoot";
+@import "cal";
+@import "contact";
+
+
+
+// HOME PAGE
+
+
+body {
+	font-family: 'Tajawal', sans-serif;
+	background:linear-gradient(#2b2343, #56a1a3, #191970);
+	color:white;
+}
+
+html { 
+	font-size: 62.5%;
+}
+
+
+.wrapper {
+	max-width:1280px;
+	width:80%;
+	margin:0 auto;
+
+}
+
+.flickContainer {
+	position:relative;
+
+	.aub  {
+		display:block;
+		position:absolute;
+		top:200px;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 2;
+		color:white;
+		font-size: 7rem;
+		font-family: 'Tajawal', sans-serif;
+		text-align: center;
+		font-weight: 700;
+		letter-spacing: 1rem;
+		
+	}
+
+}
+
+
+.hero-flick {
+	
+	.flickity-button {
+		background: transparent;
+	  }
+	
+	  .flickity-prev-next-button {
+		  width:50px;
+		  height:50px;
+	  }
+
+	  	.flickity-page-dots {
+			  bottom:30px;
+		  }
+
+		  	.flickity-page-dots .dot{
+				width:15px;
+				height:15px;
+				opacity: 1;
+				background:transparent;
+				border:1px solid white;
+			}
+
+				.flickity-page-dots .dot.is-selected {
+					background:white;
+				}
+			  
+					img{
+						background-image: no-repeat center;
+						background-attachment: fixed;
+						width:100%;
+					}
+}
+	
+
+// LATEST RELEASES
+.new {
+	
+	h1{
+		font-family: 'Tajawal', sans-serif;
+		color:white;
+		text-transform:uppercase;
+		letter-spacing:1rem;
+		font-size:3rem;
+		border-bottom:1px solid white;
+		margin:50px 0px 30px 0px;
+		}
+
+}
+
+.latest {
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items:center;
+
+	}
+
+.artistRelease { 
+		display:flex;
+		flex-direction: column;
+		width: calc(24% - 30px);
+		padding:15px;
+		margin:0;
+		
+	img {
+		width:100%;
+		}
+
+		.artistName {
+				font-family: 'Tajawal', sans-serif;
+				color:black;
+				letter-spacing:.1rem;
+				text-transform: uppercase;
+				font-size:2rem;
+				padding:0;
+				margin:5 auto;
+				text-align:center;
+				}	
+				
+			.singleName {
+					font-family: 'Nanum Myeongjo', serif;
+					color:black;
+					text-transform: uppercase;
+					font-size:1rem;
+					letter-spacing:.1em;
+					margin:10px;
+					text-align:center;
+					}
+
+				a {
+					display:inline-block;
+					background-color: black;
+					color:white;
+					text-decoration:none;
+					text-transform:uppercase;
+					letter-spacing:.1em;
+					font-weight:700;
+					font-size:1rem;
+					border:2px solid black;
+					margin:5px auto;
+					padding:15px 20px;
+					border-radius:3px;
+							
+				}
+
+					a:hover {
+							background-color: white;
+							color:black;
+							border:2px solid black;
+					}
+
+}
+
+
+.cloud {
+	margin:50px 0px 20px 0px;
+	padding: 50px 0px;
+	height:40%;
+}
+
+// GALLERY
+
+
+
+.gallery .wrapper{
+	// border:2px solid purple;
+	width:95%;
+	
+	.galleryContainer.first img{
+		width:calc(33% - 4px);
+		margin:2px;
+		}
+
+		.galleryContainer.second {
+			margin:20px auto; 
+			}
+
+			.galleryContainer.second img {
+				width:calc(24.6% - 20px);
+				margin:10px;
+				
+				}
+
+				.galleryContainer.last img {
+					width: calc(33% - 12px);
+					margin:5px;
+				}
+		
+	}
+
+	
+	@media (max-width: 765px) {
+
+		.wrapper {
+			max-width: 600px;
+		}
+	
+			.latest{
+				justify-content: space-around;
+			}
+
+			.new .artistName {
+					font-size:1.3rem;
+					margin:2 auto;
+					}	
+
+
+		.flickContainer {
+
+			.aub  {
+			font-size:3rem;
+			color:grey;
+			top:20px;
+			}
+
+		}
+
+		.hero-flick {
+			
+			  .flickity-prev-next-button {
+				  color:white;
+				  width:50px;
+				  height:50px;
+			  }
+		
+					  .flickity-page-dots .dot{
+						width:7px;
+						height:7px;
+					}
+		}
+
+	}
+
+	@media (max-width: 520px) {
+
+		.gallery .wrapper{
+			width:75%;
+	
+			.galleryContainer.first img{
+				width:calc(33% - 5px);
+				margin:2px;
+			}
+
+		.galleryContainer.second {
+			margin:20px auto; 
+			}
+
+			.galleryContainer.second img {
+				width:calc(24.6% - 5px);
+				margin:2px;
+				
+				}
+
+				.galleryContainer.last img {
+					width: calc(33% - 5px);
+					margin:2px;
+				}
+		}
+
+		.new .wrapper {
+			width:90%;
+		}
+			.latest{
+				justify-content: space-around;
+			
+
+			.new .artistName {
+					font-size:1rem;
+					margin:1 auto;
+					}	
+
+				.singleName {
+						font-size:1rem;
+						margin:2px;
+						text-align:center;
+					}
+	
+					a {
+						letter-spacing:.1em;
+						font-weight:400;
+						font-size:1rem;
+						border:1px solid black;
+						margin:2px auto;
+						padding:5px 5px;
+						border-radius:3px;
+					}
+	
+						a:hover {
+								background-color: white;
+								color:black;
+								border:2px solid black;
+						}
+		
+					}
+
+	}
