@@ -17,9 +17,7 @@ body {
 }
 
     .contactText{
-        margin:10px;
-        width:calc(50% - 20px);
-        float:left;
+        padding:1rem;
 
         h1{
             // font-family: 'Tajawal', sans-serif;
@@ -55,9 +53,8 @@ body {
 
 
 .formContainer{
-    float:left;
+    display:flex;
     margin:5px;
-    width:calc(45% - 10px);
 
     .forms{
         color:white;
@@ -67,6 +64,7 @@ body {
         display:flex;
         flex-direction: column;
         border-radius: 3px;
+        border:1px solid red;
     }
        label{
            margin:10px 0px 10px 0px;

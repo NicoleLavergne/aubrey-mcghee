@@ -16,10 +16,10 @@ header {
 
 	.hamburger {
 		label {
-			font-size: 2rem;
+			font-size:2rem;
 			position: absolute;
-			top: 30px;
-			right:50px;
+			top: 10px;
+			right:30px;
 		}
 			#toggle {
 			display:none;
@@ -44,9 +44,8 @@ header {
 	display:none;
 
 	li{
-		left:-50px;
 		background-color:hsl(255, 31%, 20%);
-		padding:20px;
+		padding:15px;
 		margin:0;
 		width:100%;
 
@@ -65,7 +64,6 @@ header {
 	width:100%;
 	position: relative;
 
-	
 
 	.logo {
 		margin:10px;
@@ -75,7 +73,7 @@ header {
 		h1 {
 			color:white;
 			font-family: 'Tinos', serif;
-			font-size: 3rem;
+			font-size: 2rem;
 			letter-spacing: .5rem;
 			margin:10px;
 			padding:0;
@@ -88,14 +86,16 @@ header {
 		display: flex;
 		justify-content:flex-end;
 		width:100%;
-		margin-right:100px;
+		margin-right:50px;
 	}
 
 			ul {
-				font-size:1.7rem;
+				font-size:1.6rem;
 				list-style-type:none;
 				display:flex;
-				padding-right:50px;
+				padding:0;
+				// padding-right:50px;
+				margin:.5rem;
 		
 			}
 

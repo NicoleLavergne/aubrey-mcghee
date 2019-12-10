@@ -435,8 +435,8 @@ header {
 .hamburger label {
   font-size: 2rem;
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 10px;
+  right: 30px;
 }
 
 .hamburger #toggle {
@@ -465,9 +465,8 @@ header {
 }
 
 .headContainer .dropDown li {
-  left: -50px;
   background-color: #2b2343;
-  padding: 20px;
+  padding: 15px;
   margin: 0;
   width: 100%;
 }
@@ -496,8 +495,8 @@ header {
 
 .headContainer .logo h1 {
   color: white;
-  font-family: "Dawning of a New Day", cursive;
-  font-size: 3rem;
+  font-family: 'Tinos', serif;
+  font-size: 2rem;
   letter-spacing: .5rem;
   margin: 10px;
   padding: 0;
@@ -511,16 +510,17 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .headContainer ul {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 50px;
+  padding: 0;
+  margin: .5rem;
 }
 
 .headContainer li {
@@ -1046,8 +1046,8 @@ header {
 .hamburger label {
   font-size: 2rem;
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 10px;
+  right: 30px;
 }
 
 .hamburger #toggle {
@@ -1076,9 +1076,8 @@ header {
 }
 
 .headContainer .dropDown li {
-  left: -50px;
   background-color: #2b2343;
-  padding: 20px;
+  padding: 15px;
   margin: 0;
   width: 100%;
 }
@@ -1107,8 +1106,8 @@ header {
 
 .headContainer .logo h1 {
   color: white;
-  font-family: "Dawning of a New Day", cursive;
-  font-size: 3rem;
+  font-family: 'Tinos', serif;
+  font-size: 2rem;
   letter-spacing: .5rem;
   margin: 10px;
   padding: 0;
@@ -1122,16 +1121,17 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .headContainer ul {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 50px;
+  padding: 0;
+  margin: .5rem;
 }
 
 .headContainer li {
@@ -1229,8 +1229,12 @@ footer p {
   height: 0;
 }
 
+body {
+  background: no-repeat;
+}
+
 .upcoming {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px;
   background-color: white;
@@ -1258,8 +1262,6 @@ footer p {
   border: 2px solid black;
   padding: 20px;
   margin: 20px;
-  -webkit-transition: background-color .4s;
-  transition: background-color .4s;
 }
 
 .LiveEvent:hover .socialLink {
@@ -1274,11 +1276,13 @@ footer p {
   border-right: 2px solid white;
   padding: 20px;
   margin: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .LiveEvent h1 {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-transform: lowercase;
   letter-spacing: .1rem;
   font-weight: 400;
@@ -1772,8 +1776,8 @@ header {
 .hamburger label {
   font-size: 2rem;
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 10px;
+  right: 30px;
 }
 
 .hamburger #toggle {
@@ -1802,9 +1806,8 @@ header {
 }
 
 .headContainer .dropDown li {
-  left: -50px;
   background-color: #2b2343;
-  padding: 20px;
+  padding: 15px;
   margin: 0;
   width: 100%;
 }
@@ -1833,8 +1836,8 @@ header {
 
 .headContainer .logo h1 {
   color: white;
-  font-family: "Dawning of a New Day", cursive;
-  font-size: 3rem;
+  font-family: 'Tinos', serif;
+  font-size: 2rem;
   letter-spacing: .5rem;
   margin: 10px;
   padding: 0;
@@ -1848,16 +1851,17 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .headContainer ul {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 50px;
+  padding: 0;
+  margin: .5rem;
 }
 
 .headContainer li {
@@ -1970,9 +1974,7 @@ body {
 }
 
 .contactText {
-  margin: 10px;
-  width: calc(50% - 20px);
-  float: left;
+  padding: 1rem;
 }
 
 .contactText h1 {
@@ -2007,9 +2009,10 @@ body {
 }
 
 .formContainer {
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 5px;
-  width: calc(45% - 10px);
 }
 
 .formContainer .forms {
@@ -2025,6 +2028,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 3px;
+  border: 1px solid red;
 }
 
 .formContainer label {
@@ -2097,7 +2101,7 @@ html {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -2135,8 +2139,8 @@ html {
 }
 
 .hero-flick .flickity-page-dots .dot {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   opacity: 1;
   background: transparent;
   border: 1px solid white;
@@ -2181,25 +2185,29 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #f7f1e8;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(24% - 30px);
-  padding: 15px;
+  width: calc(24% - 20px);
+  padding: 10px;
   margin: 0;
+  border-radius: .1rem;
 }
 
 .artistRelease img {
   width: 100%;
+  border-radius: .1rem;
 }
 
 .artistRelease .artistName {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Nanum Myeongjo', sans-serif;
   color: black;
   letter-spacing: .1rem;
   text-transform: uppercase;
-  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-size: 4rem;
   padding: 0;
   margin: 5 auto;
   text-align: center;
@@ -2208,8 +2216,7 @@ html {
 .artistRelease .singleName {
   font-family: 'Nanum Myeongjo', serif;
   color: black;
-  text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: .1em;
   margin: 10px;
   text-align: center;
@@ -2217,23 +2224,24 @@ html {
 
 .artistRelease a {
   display: inline-block;
-  background-color: black;
+  background-color: #2b2343;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .2rem;
   font-weight: 700;
   font-size: 1rem;
   border: 2px solid black;
   margin: 5px auto;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border-radius: 3px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .artistRelease a:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  color: #f7f1e8;
+  border: 2px solid #f7f1e8;
 }
 
 .cloud {

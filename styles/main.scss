@@ -3,8 +3,6 @@
 @import "cal";
 @import "contact";
 
-
-
 // HOME PAGE
 
 
@@ -21,7 +19,7 @@ html {
 
 .wrapper {
 	max-width:1280px;
-	width:80%;
+	width:95%;
 	margin:0 auto;
 
 }
@@ -65,8 +63,8 @@ html {
 		  }
 
 		  	.flickity-page-dots .dot{
-				width:15px;
-				height:15px;
+				width:10px;
+				height:10px;
 				opacity: 1;
 				background:transparent;
 				border:1px solid white;
@@ -104,26 +102,29 @@ html {
 	flex-direction: row;
 	flex-wrap:wrap;
 	align-items:center;
-
 	}
 
 .artistRelease { 
 		display:flex;
+		background-color:rgb(247, 241, 232);
 		flex-direction: column;
-		width: calc(24% - 30px);
-		padding:15px;
+		width: calc(24% - 20px);
+		padding:10px;
 		margin:0;
+		border-radius: .1rem;
 		
 	img {
 		width:100%;
+		border-radius:.1rem;
 		}
 
 		.artistName {
-				font-family: 'Tajawal', sans-serif;
+				font-family: 'Nanum Myeongjo', sans-serif;
 				color:black;
 				letter-spacing:.1rem;
 				text-transform: uppercase;
-				font-size:2rem;
+				letter-spacing: .2rem;
+				font-size:4rem;
 				padding:0;
 				margin:5 auto;
 				text-align:center;
@@ -132,8 +133,7 @@ html {
 			.singleName {
 					font-family: 'Nanum Myeongjo', serif;
 					color:black;
-					text-transform: uppercase;
-					font-size:1rem;
+					font-size:1.5rem;
 					letter-spacing:.1em;
 					margin:10px;
 					text-align:center;
@@ -141,24 +141,24 @@ html {
 
 				a {
 					display:inline-block;
-					background-color: black;
+					background-color:hsl(255, 31%, 20%);
 					color:white;
 					text-decoration:none;
 					text-transform:uppercase;
-					letter-spacing:.1em;
+					letter-spacing:.2rem;
 					font-weight:700;
 					font-size:1rem;
 					border:2px solid black;
 					margin:5px auto;
-					padding:15px 20px;
+					padding:10px 15px;
 					border-radius:3px;
+					transition:all .3s;
 							
 				}
-
 					a:hover {
-							background-color: white;
-							color:black;
-							border:2px solid black;
+							
+							color:rgb(247, 241, 232);
+							border:2px solid rgb(247, 241, 232);
 					}
 
 }
@@ -171,8 +171,6 @@ html {
 }
 
 // GALLERY
-
-
 
 .gallery .wrapper{
 	// border:2px solid purple;
