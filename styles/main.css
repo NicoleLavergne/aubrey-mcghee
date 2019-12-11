@@ -1969,7 +1969,7 @@ body {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -2028,7 +2028,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 3px;
-  border: 1px solid red;
 }
 
 .formContainer label {
@@ -2039,17 +2038,27 @@ body {
   border: .5px solid black;
   border-radius: 3px;
   padding: 5px;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
 }
 
 .formContainer textarea {
+  font-size: 1rem;
   margin-top: 20px;
   border-radius: 3px;
+  letter-spacing: .2rem;
 }
 
 .formContainer button {
   margin-top: 20px;
   padding: 10px;
   border-radius: 3px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .formContainer button:hover {
@@ -2156,6 +2165,22 @@ html {
   width: 100%;
 }
 
+.cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+  padding: 50px 0px;
+}
+
+.song {
+  border: 1px solid red;
+}
+
 .new h1 {
   font-family: 'Tajawal', sans-serif;
   color: white;
@@ -2207,7 +2232,7 @@ html {
   letter-spacing: .1rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 0;
   margin: 5 auto;
   text-align: center;
@@ -2231,7 +2256,7 @@ html {
   letter-spacing: .2rem;
   font-weight: 700;
   font-size: 1rem;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 5px auto;
   padding: 10px 15px;
   border-radius: 3px;
@@ -2240,14 +2265,9 @@ html {
 }
 
 .artistRelease a:hover {
-  color: #f7f1e8;
-  border: 2px solid #f7f1e8;
-}
-
-.cloud {
-  margin: 50px 0px 20px 0px;
-  padding: 50px 0px;
-  height: 40%;
+  border: 1px solid purple;
+  background-color: #f7f1e8;
+  color: #2b2343;
 }
 
 .gallery .wrapper {

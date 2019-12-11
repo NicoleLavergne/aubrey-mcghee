@@ -82,6 +82,17 @@ html {
 }
 	
 
+.cloud{
+	display:flex;
+	flex-direction: column;
+	margin:1rem 0;
+	padding: 50px 0px;
+	// 	height:40%;
+}
+.song{
+	border:1px solid red;
+}
+
 // LATEST RELEASES
 .new {
 	
@@ -124,7 +135,7 @@ html {
 				letter-spacing:.1rem;
 				text-transform: uppercase;
 				letter-spacing: .2rem;
-				font-size:4rem;
+				font-size:2rem;
 				padding:0;
 				margin:5 auto;
 				text-align:center;
@@ -148,7 +159,7 @@ html {
 					letter-spacing:.2rem;
 					font-weight:700;
 					font-size:1rem;
-					border:2px solid black;
+					border:1px solid black;
 					margin:5px auto;
 					padding:10px 15px;
 					border-radius:3px;
@@ -156,19 +167,14 @@ html {
 							
 				}
 					a:hover {
-							
-							color:rgb(247, 241, 232);
-							border:2px solid rgb(247, 241, 232);
+						border:1px solid purple;
+						background-color: rgb(247, 241, 232);
+						color:hsl(255, 31%, 20%);
 					}
 
 }
 
 
-.cloud {
-	margin:50px 0px 20px 0px;
-	padding: 50px 0px;
-	height:40%;
-}
 
 // GALLERY
 

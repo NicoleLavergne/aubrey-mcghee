@@ -12,7 +12,7 @@ body {
 
 .wrapper {
 	max-width:1280px;
-	width:80%;
+	width:90%;
     margin:0 auto;
 }
 
@@ -20,7 +20,6 @@ body {
         padding:1rem;
 
         h1{
-            // font-family: 'Tajawal', sans-serif;
             color:white;
             font-size: 3rem;
             text-transform:uppercase;
@@ -64,7 +63,6 @@ body {
         display:flex;
         flex-direction: column;
         border-radius: 3px;
-        border:1px solid red;
     }
        label{
            margin:10px 0px 10px 0px;
@@ -74,17 +72,26 @@ body {
             border:.5px solid black;
             border-radius:3px;
             padding:5px;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
         }
 
                 textarea{
+                    font-size:1rem;
                     margin-top:20px;
                     border-radius:3px;
+                    letter-spacing: .2rem;
                 }
 
                     button {
                         margin-top:20px;
                         padding:10px;
                         border-radius:3px; 
+                        transition:all .3s;
+                        border:1px solid;
+                        letter-spacing: .2rem;
+                        text-transform: uppercase;
+                        font-size:1rem;
                 
                     }
                         button:hover {
