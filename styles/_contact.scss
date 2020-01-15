@@ -23,7 +23,7 @@ body {
             color:white;
             font-size: 3rem;
             text-transform:uppercase;
-            letter-spacing:1rem;
+            letter-spacing:.5rem;
             border-bottom:1px solid white;
             margin-top:20px;
         }
@@ -31,7 +31,7 @@ body {
             p{
                 color:white;
                 font-size: 1.5rem;
-                letter-spacing:.3rem;
+                letter-spacing:.1rem;
             }
                 span {
                     font-weight: 700;
@@ -54,7 +54,7 @@ body {
 .formContainer{
     display:flex;
     margin:5px;
-
+    border:1px solid red;
     .forms{
         color:white;
         font-size:1.5rem;
@@ -62,7 +62,9 @@ body {
         text-transform: uppercase;
         display:flex;
         flex-direction: column;
-        border-radius: 3px;
+        border:1px solid purple;
+        width:100%;
+
     }
        label{
            margin:10px 0px 10px 0px;
@@ -70,16 +72,15 @@ body {
 
         input{
             border:.5px solid black;
-            border-radius:3px;
+            border-radius:2px;
             padding:5px;
             letter-spacing: .2rem;
-            text-transform: uppercase;
         }
 
                 textarea{
                     font-size:1rem;
                     margin-top:20px;
-                    border-radius:3px;
+                    border-radius:2px;
                     letter-spacing: .2rem;
                 }
 

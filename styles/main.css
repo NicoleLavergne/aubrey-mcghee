@@ -1250,7 +1250,7 @@ body {
   font-family: 'Tajawal', sans-serif;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: .5rem;
   font-size: 3rem;
   border-bottom: 1px solid white;
   margin: 50px 0px 30px 0px;
@@ -1981,7 +1981,7 @@ body {
   color: white;
   font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: .5rem;
   border-bottom: 1px solid white;
   margin-top: 20px;
 }
@@ -1989,7 +1989,7 @@ body {
 .contactText p {
   color: white;
   font-size: 1.5rem;
-  letter-spacing: .3rem;
+  letter-spacing: .1rem;
 }
 
 .contactText span {
@@ -2013,6 +2013,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 5px;
+  border: 1px solid red;
 }
 
 .formContainer .forms {
@@ -2027,7 +2028,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 3px;
+  border: 1px solid purple;
+  width: 100%;
 }
 
 .formContainer label {
@@ -2036,16 +2038,15 @@ body {
 
 .formContainer input {
   border: .5px solid black;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 5px;
   letter-spacing: .2rem;
-  text-transform: uppercase;
 }
 
 .formContainer textarea {
   font-size: 1rem;
   margin-top: 20px;
-  border-radius: 3px;
+  border-radius: 2px;
   letter-spacing: .2rem;
 }
 
